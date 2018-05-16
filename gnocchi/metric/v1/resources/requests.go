@@ -53,7 +53,20 @@ func List(c *gophercloud.ServiceClient, opts ListOptsBuilder, resourceType strin
 		url += query
 	}
 	return pagination.NewPager(c, url, func(r pagination.PageResult) pagination.Page {
-		return ResourcePage{pagination.SinglePageBase(r)}
+		rp := ResourcePage{
+			MarkerPageBase: pagination.MarkerPageBase{
+				PageResult: pagination.PageResult{
+					Result: gophercloud.Result{
+						Body:   r.Body,
+						Header: r.Header,
+						Err:    r.Err,
+					},
+					URL: r.URL,
+				},
+			},
+		}
+		rp.Owner = rp
+		return rp
 	})
 }
 

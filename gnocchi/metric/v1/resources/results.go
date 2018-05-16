@@ -150,7 +150,7 @@ func (r *Resource) UnmarshalJSON(b []byte) error {
 // returned to the client, you may only safely access the data provided through
 // the ExtractResources call.
 type ResourcePage struct {
-	pagination.SinglePageBase
+	pagination.MarkerPageBase
 }
 
 // IsEmpty checks whether a ResourcePage struct is empty.
@@ -169,4 +169,16 @@ func ExtractResources(r pagination.Page) ([]Resource, error) {
 	}
 
 	return s, err
+}
+
+// LastMarker returns the last id (if any) of the last Resource on the ResourcePage
+func (r ResourcePage) LastMarker() (string, error) {
+	is, err := ExtractResources(r)
+	if err != nil {
+		return "", err
+	}
+	if len(is) == 0 {
+		return "", nil
+	}
+	return is[len(is)-1].ID, nil
 }
