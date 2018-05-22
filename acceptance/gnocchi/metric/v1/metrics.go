@@ -5,7 +5,7 @@ import (
 
 	"github.com/gophercloud/gophercloud"
 	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/utils/gnocchi/metric/v1/metrics"
+	"github.com/petterw/utils/gnocchi/metric/v1/metrics"
 )
 
 // CreateMetric will create Gnocchi metric. An error will be returned if the

@@ -6,7 +6,7 @@ import (
 
 	"github.com/gophercloud/gophercloud"
 	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/utils/gnocchi/metric/v1/resources"
+	"github.com/petterw/utils/gnocchi/metric/v1/resources"
 	"github.com/satori/go.uuid"
 )
 
