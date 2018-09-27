@@ -6,9 +6,9 @@ package clients
 import (
 	"os"
 
+	"github.com/acdc-cloud/utils/gnocchi"
 	"github.com/gophercloud/gophercloud"
 	"github.com/gophercloud/gophercloud/openstack"
-	"github.com/petterw/utils/gnocchi"
 )
 
 // NewGnocchiV1Client returns a *ServiceClient for making calls

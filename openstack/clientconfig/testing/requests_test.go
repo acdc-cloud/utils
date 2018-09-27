@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/acdc-cloud/utils/openstack/clientconfig"
 	"github.com/gophercloud/gophercloud"
-	"github.com/petterw/utils/openstack/clientconfig"
 
 	th "github.com/gophercloud/gophercloud/testhelper"
 )

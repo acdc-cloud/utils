@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/petterw/utils/acceptance/clients"
-	"github.com/petterw/utils/gnocchi/metric/v1/archivepolicies"
+	"github.com/acdc-cloud/utils/acceptance/clients"
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/archivepolicies"
 )
 
 func TestArchivePoliciesList(t *testing.T) {

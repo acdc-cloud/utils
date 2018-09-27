@@ -10,7 +10,7 @@ import (
 	acc_compute "github.com/gophercloud/gophercloud/acceptance/openstack/compute/v2"
 	acc_tools "github.com/gophercloud/gophercloud/acceptance/tools"
 
-	cc "github.com/petterw/utils/openstack/clientconfig"
+	cc "github.com/acdc-cloud/utils/openstack/clientconfig"
 )
 
 func TestServerCreateDestroy(t *testing.T) {

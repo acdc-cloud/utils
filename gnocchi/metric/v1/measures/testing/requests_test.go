@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/measures"
+	fake "github.com/acdc-cloud/utils/gnocchi/testhelper/client"
 	"github.com/gophercloud/gophercloud/pagination"
 	th "github.com/gophercloud/gophercloud/testhelper"
-	"github.com/petterw/utils/gnocchi/metric/v1/measures"
-	fake "github.com/petterw/utils/gnocchi/testhelper/client"
 )
 
 func TestListMeasures(t *testing.T) {
