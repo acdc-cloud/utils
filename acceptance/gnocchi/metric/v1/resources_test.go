@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/acdc-cloud/utils/acceptance/clients"
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/resources"
 	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/petterw/utils/acceptance/clients"
-	"github.com/petterw/utils/gnocchi/metric/v1/resources"
 )
 
 func TestResourcesCRUD(t *testing.T) {

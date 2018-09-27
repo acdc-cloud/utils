@@ -1,6 +1,6 @@
 package testing
 
-import "github.com/petterw/utils/gnocchi/metric/v1/archivepolicies"
+import "github.com/acdc-cloud/utils/gnocchi/metric/v1/archivepolicies"
 
 // ArchivePoliciesListResult represents a raw server response from a server to a list call.
 const ArchivePoliciesListResult = `

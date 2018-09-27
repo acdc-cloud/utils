@@ -1,10 +1,10 @@
 package metrics
 
 import (
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/archivepolicies"
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/resources"
 	"github.com/gophercloud/gophercloud"
 	"github.com/gophercloud/gophercloud/pagination"
-	"github.com/petterw/utils/gnocchi/metric/v1/archivepolicies"
-	"github.com/petterw/utils/gnocchi/metric/v1/resources"
 )
 
 type commonResult struct {

@@ -1,8 +1,8 @@
 package testing
 
 import (
+	"github.com/acdc-cloud/utils/openstack/clientconfig"
 	"github.com/gophercloud/gophercloud"
-	"github.com/petterw/utils/openstack/clientconfig"
 )
 
 var HawaiiCloudYAML = clientconfig.Cloud{

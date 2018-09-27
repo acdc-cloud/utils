@@ -3,7 +3,7 @@ package testing
 import (
 	"time"
 
-	"github.com/petterw/utils/gnocchi/metric/v1/measures"
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/measures"
 )
 
 // MeasuresListResult represents a raw server response from a server to a List call.

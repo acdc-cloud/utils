@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/archivepolicies"
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/metrics"
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/resources"
+	fake "github.com/acdc-cloud/utils/gnocchi/testhelper/client"
 	"github.com/gophercloud/gophercloud/pagination"
 	th "github.com/gophercloud/gophercloud/testhelper"
-	"github.com/petterw/utils/gnocchi/metric/v1/archivepolicies"
-	"github.com/petterw/utils/gnocchi/metric/v1/metrics"
-	"github.com/petterw/utils/gnocchi/metric/v1/resources"
-	fake "github.com/petterw/utils/gnocchi/testhelper/client"
 )
 
 func TestList(t *testing.T) {

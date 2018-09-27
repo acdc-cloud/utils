@@ -1,8 +1,8 @@
 package testing
 
 import (
-	"github.com/petterw/utils/gnocchi/metric/v1/archivepolicies"
-	"github.com/petterw/utils/gnocchi/metric/v1/metrics"
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/archivepolicies"
+	"github.com/acdc-cloud/utils/gnocchi/metric/v1/metrics"
 )
 
 // MetricsListResult represents a raw server response from a server to a list call.

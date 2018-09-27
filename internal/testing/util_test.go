@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/petterw/utils/internal"
+	"github.com/acdc-cloud/utils/internal"
 )
 
 func TestRemainingKeys(t *testing.T) {
